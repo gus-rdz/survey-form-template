@@ -6,115 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
   </head>
+
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Description</p>
+    <div class="container">
+      <header>
+        <h1 id="title">Video Game survey form</h1>
 
-    <form id="survey-form">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required />
+        <p id="description">
+          Thank you for taking the time to answer our questions about your
+          favorite videogames
+        </p>
+      </header>
 
-      <label id="email-label" for="email">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" required />
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name: </label>
 
-      <label id="number-label" for="number">Age</label>
-      <input id="number" type="number" placeholder="Age" min="10" max="99" />
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            required
+            placeholder="Enter your full name"
+          />
+        </div>
 
-      <p>Which option best describes your role?</p>
-      <select id="dropdown" name="role" class="form-control" required>
-        <option disabled selected value>Select current role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="other">Other</option>
-      </select>
+        <div class="form-group">
+          <label for="email" id="email-label">Email: </label>
 
-      <p>Would you recommend freeCodeCamp to a friend?</p>
-      <label>
-        <input
-          name="user-recommend"
-          value="definitely"
-          type="radio"
-          class="input-radio"
-        />Definitely
-      </label>
-      <label>
-        <input
-          name="user-recommend"
-          value="maybe"
-          type="radio"
-          class="input-radio"
-        />Maybe
-      </label>
-      <label>
-        <input
-          name="user-recommend"
-          value="not-sure"
-          type="radio"
-          class="input-radio"
-        />Not sure
-      </label>
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
 
-      <p>
-        What would you like to see improved?<span class="clue"></span>
-          (Check all that apply)</span
-        >
-      </p>
-      <label>
-        <input
-          name="prefer"
-          value="front-end-projects"
-          type="checkbox"
-          class="input-checkbox"
-        />Front-end Projects
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="back-end-projects"
-          type="checkbox"
-          class="input-checkbox"
-        />Back-end Projects
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="data-visualization"
-          type="checkbox"
-          class="input-checkbox"
-        />Data Visualization
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="challenges"
-          type="checkbox"
-          class="input-checkbox"
-        />Challenges
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="open-source-community"
-          type="checkbox"
-          class="input-checkbox"
-        />Open Source Community
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="gitter-help-rooms"
-          type="checkbox"
-          class="input-checkbox"
-        />Gitter help rooms
-      </label>
-      <label>
-        <input
-          name="prefer"
-          value="videos"
-          type="checkbox"
-          class="input-checkbox"
-        />Videos
-      </label>
-    </form>
+        <div class="form-group">
+          <label for="number" id="number-label">Age: </label>
+
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            required
+            min="10"
+            max="100"
+            placeholder="Enter your age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Which is your preferred way to play video games?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select One</option>
+            <option value="Xbox">Xbox One or Xbox Series X/S</option>
+            <option value="Playstation">PS4/PS5</option>
+            <option value="Nintendo">Nintendo Switch</option>
+            <option value="PC">PC</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-check">
+          <p>How often do you play video games?</p>
+
+          <label for="">
+            <input
+              type="radio"
+              name="user-recommend"
+              value="8-hours"
+              class="form-check-input"
+              checked
+            />about 8 hours a day
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="4-hours"
+              class="form-check-input"
+            />about 4 hours a day
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="1-hour"
+              class="form-check-input"
+            />about an hour a day
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-much"
+              class="form-check-input"
+            />about once a week
+          </label>
+        </div>
+
+        <div class="form-group row"></div>
+      </form>
+    </div>
   </body>
 </html>
