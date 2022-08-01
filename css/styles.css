@@ -36,3 +36,22 @@ header {
   width: 48%;
   border-radius: 10px;
 }
+
+.form-group {
+  margin: 0 auto 0.25em auto;
+  padding: 0.25em;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.row p {
+  margin-left: -2%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.form-check p {
+  margin: 15px 0 0 -21px;
+}
