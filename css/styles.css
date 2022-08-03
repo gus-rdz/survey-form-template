@@ -55,3 +55,19 @@ p {
 .form-check p {
   margin: 15px 0 0 -21px;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 10% 0;
+  }
+  form {
+    width: 268px;
+  }
+  header {
+    width: 268px;
+  }
+  #title {
+    font-size: 1.35em;
+    padding: 5px;
+  }
+}
